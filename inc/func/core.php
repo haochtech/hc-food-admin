@@ -1224,6 +1224,9 @@ class Core extends WeModuleSite
             'city_code' => $cityCode,//城市
             'tips' => 0,//小费
             'info' => $order['note'],//备注
+
+            // 订单中没有重量字段 在此默认为1
+            'cargo_weight' => 1,
             'cargo_price' => $order['money'],
             'is_prepay' => 0,
             'expected_fetch_time' => time() + 600,
